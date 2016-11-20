@@ -10,3 +10,62 @@ set nowrap
 set modeline
 set laststatus=2
 set textwidth=78
+
+"-------------------------------------------------------------------------------
+
+" Insert timestamp after cursor position
+map \ts "=strftime("%F %T %Z")<CR>p
+
+" Insert email address after cursor position
+map \eml aandrew.chace@gmail.com<Esc>
+
+" RPM changelog entry
+map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <andrew.chace@gmail.com><Esc>
+
+" Single-quote all lines
+map \sqa :%s/\(.*\)/'\1'<Esc>
+
+" Single quote current line
+map \sql :s/\(.*\)/'\1'<Esc>
+
+" Double-quote all lines
+map \dqa :%s/\(.*\)/"\1"<Esc>
+
+" Double-quote current line
+map \dql :s/\(.*\)/"\1"<Esc>
+
+" Add trailing comma to all lines
+map \tca :%s/\(.*\)/\1,<Esc>
+
+" Add trailing comma to current line
+map \tcl :%s/\(.*\)/\1,<Esc>
+
+" Remove trailing whitespace from all lines
+map \rtsa :%s/\s*$//g<Esc>
+
+" Remove trailing whitespace from current line
+map \rtsl :%s/\s*$//g<Esc>
+
+" Show differences since time file was saved
+map \diff :w !diff -u % -
+
+" Comment line
+map \cl :s/^/#/<CR>
+
+" Uncomment line
+map \ucl :s/^#//<CR>
+
+" Toggle line numbers
+map <F1> :set number! number?<CR>
+
+" Toggle line wrapping
+map <F2> :set wrap! wrap?<CR>
+
+" Toggle autoindent mode
+map <F3> :set autoindent! autoindent?<CR>
+
+" Toggle paste mode
+map <F4> :set paste! paste?<CR>
+
+" Toggle display unprintable characters
+map <F5> :set list! list?<CR>
