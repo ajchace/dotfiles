@@ -28,6 +28,18 @@ cat > $HOME/.dotfiles/.gitignore << EOF
 EOF
 ```
 ## Usage
+### Clone repository into your home directory:
+```shell
+dotfiles clone --bare https://github.com/ajchace/dotfiles.git .dotfiles
+```
+### Clone submodules:
+```shell
+dotfiles submodule init
+```
+### Update submodules:
+```shell
+dotfiles submodule update
+```
 ### Check configuration files out into your home directory:
 ```shell
 dotfiles checkout
