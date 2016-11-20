@@ -30,7 +30,11 @@ EOF
 ## Usage
 ### Clone repository into your home directory:
 ```shell
-dotfiles clone --bare https://github.com/ajchace/dotfiles.git .dotfiles
+dotfiles clone --bare https://github.com/mygitrepo/dotfiles.git .dotfiles
+```
+### Checkout branch into your home directory:
+```shell
+dotfiles checkout mybranch 
 ```
 ### Clone submodules:
 ```shell
@@ -39,10 +43,6 @@ dotfiles submodule init
 ### Update submodules:
 ```shell
 dotfiles submodule update
-```
-### Check configuration files out into your home directory:
-```shell
-dotfiles checkout
 ```
 ### Add a configuration file to the repository:
 ```shell
