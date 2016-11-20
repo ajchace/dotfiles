@@ -34,7 +34,7 @@ dotfiles clone --bare https://github.com/mygitrepo/dotfiles.git .dotfiles
 ```
 ### Checkout branch into your home directory:
 ```shell
-dotfiles checkout mybranch 
+dotfiles checkout mybranch
 ```
 ### Clone submodules:
 ```shell
