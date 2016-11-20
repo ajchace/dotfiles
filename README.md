@@ -52,3 +52,7 @@ dotfiles add $HOME/.myconfigfile
 ```shell
 dotfiles commit -m "Added configuration file for myconfig"
 ```
+### Push commit to upstream repository
+```shell
+dotfiles push -u origin mybranch
+```
