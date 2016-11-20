@@ -17,8 +17,8 @@ set modeline
 set laststatus=2
 set textwidth=78
 
--"-------------------------------------------------------------------------------
--
+"-------------------------------------------------------------------------------
+
 " Solarized
 set background="dark"
 let g:solarized_contrast="high"
