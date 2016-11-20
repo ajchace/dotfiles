@@ -38,6 +38,12 @@ export PYTHONSTARTUP="$HOME/.pythonrc.py"
 ## Alias for managing dotfiles repository
 alias dotfiles="git --git-dir=\$HOME/.dotfiles/ --work-tree=\$HOME"
 
+## Alias for searching command history
+alias hgrep="history | grep"
+
+## Alias for viewing command history
+alias hless="history | less +G"
+
 ## Render man page as Postscript and open in Preview.app
 psman() {
     man -t "${@}" | open -f -a Preview.app
