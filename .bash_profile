@@ -22,8 +22,9 @@ export EDITOR="/usr/bin/vi";
 ## Use less(1) as the default pager for the man(1) command.
 export PAGER="/usr/bin/less"
 
-## Mostly case insensitive, no line numbers, squeeze blank lines.
-export LESS="-i -n -s -P %f / %lb / %Pb";
+## Mostly case insensitive, no line numbers, squeeze blank lines,
+## display "raw" control characters.
+export LESS="-i -n -s -r -P %f / %lb / %Pb";
 
 ## Colorize directory listings with psuedo "solarized" color palette.
 export LSCOLORS="gxfxbEaEBxxEhEhBaDaCaD"
