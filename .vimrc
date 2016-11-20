@@ -1,3 +1,9 @@
+-" Load pathogen plugin
+-runtime bundle/vim-pathogen/autoload/pathogen.vim
+-execute pathogen#infect()
+
+"-------------------------------------------------------------------------------
+
 filetype plugin on
 filetype indent on
 syntax enable
