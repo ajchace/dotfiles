@@ -1,6 +1,6 @@
--" Load pathogen plugin
--runtime bundle/vim-pathogen/autoload/pathogen.vim
--execute pathogen#infect()
+" Load pathogen plugin
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 "-------------------------------------------------------------------------------
 
@@ -24,10 +24,22 @@ set background="dark"
 let g:solarized_contrast="high"
 let g:solarized_termcolors=256
 colorscheme solarized
+let g:AirlineTheme="solarized"
 
 " PaperColor
 "set background="light"
 "colorscheme PaperColor
+"let g:AirlineTheme="papercolor"
+
+"-------------------------------------------------------------------------------
+
+-let g:syntastic_always_populate_loc_list = 1
+-let g:syntastic_auto_loc_list = 1
+-let g:syntastic_auto_jump = 3
+-let g:syntastic_check_on_open = 0
+-let g:syntastic_check_on_wq = 1
+-let g:syntastic_enable_highlighting = 0
+-let g:syntastic_loc_list_height = 5
 
 "-------------------------------------------------------------------------------
 
