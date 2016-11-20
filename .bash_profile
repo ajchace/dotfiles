@@ -32,6 +32,9 @@ export CLICOLOR="1"
 # MacPorts Installer addition on 2016-11-05_at_09:58:27: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
+## Make python use an rc file so we can have tab completion
+export PYTHONSTARTUP="$HOME/.pythonrc.py"
+
 ## Alias for managing dotfiles repository
 alias dotfiles="git --git-dir=\$HOME/.dotfiles/ --work-tree=\$HOME"
 
