@@ -47,10 +47,10 @@ let g:syntastic_loc_list_height = 5
 map \ts "=strftime("%F %T %Z")<CR>p
 
 " Insert email address after cursor position
-map \eml aandrew.chace@gmail.com<Esc>
+map \eml achacea@fullcount.net<Esc>
 
 " RPM changelog entry
-map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <andrew.chace@gmail.com><Esc>
+map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <chacea@fullcount.net><Esc>
 
 " Single-quote all lines
 map \sqa :%s/\(.*\)/'\1'<Esc>
