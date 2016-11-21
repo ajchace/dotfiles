@@ -26,13 +26,6 @@ export PAGER="/usr/bin/less"
 ## display "raw" control characters.
 export LESS="-i -n -s -r -P %f / %lb / %Pb";
 
-## Colorize directory listings with psuedo "solarized" color palette.
-export LSCOLORS="gxfxbEaEBxxEhEhBaDaCaD"
-export CLICOLOR="1"
-
-# MacPorts Installer addition on 2016-11-05_at_09:58:27: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-
 ## Make python use an rc file so we can have tab completion
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
@@ -44,11 +37,6 @@ alias hgrep="history | grep"
 
 ## Alias for viewing command history
 alias hless="history | less +G"
-
-## Render man page as Postscript and open in Preview.app
-psman() {
-    man -t "${@}" | open -f -a Preview.app
-}
 
 ## Show ANSI color combinations
 ansicolors () {
