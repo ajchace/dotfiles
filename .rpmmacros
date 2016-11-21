@@ -1,0 +1,9 @@
+%vendor FullCount
+%packager Andrew Chace <chacea@fullcount.net>
+
+# Separate directory structure for building "dhcpcd" package.
+#%_topdir /root/rpm/dhcpcd-5.6.8
+
+# Separate directory structure for building "dhcp" (dhclient) package.
+#%_topdir /root/rpm/dhcp-4.2.4
+
