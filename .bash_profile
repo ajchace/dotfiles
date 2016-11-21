@@ -55,3 +55,8 @@ ansicolors () {
     }; done
     echo;
 };
+
+# Automatically create a new screen session, or reattach to an existing session.
+if [ -z ${STY} ] && [ -t 0 ]; then {
+    screen -A -d -R -S login;
+}; fi
