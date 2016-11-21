@@ -28,9 +28,21 @@ cat > $HOME/.dotfiles/.gitignore << EOF
 EOF
 ```
 ## Usage
-### Check configuration files out into your home directory:
+### Clone repository into your home directory:
 ```shell
-dotfiles checkout
+dotfiles clone --bare https://github.com/mygitrepo/dotfiles.git .dotfiles
+```
+### Checkout branch into your home directory:
+```shell
+dotfiles checkout mybranch
+```
+### Clone submodules:
+```shell
+dotfiles submodule init
+```
+### Update submodules:
+```shell
+dotfiles submodule update
 ```
 ### Add a configuration file to the repository:
 ```shell
@@ -39,4 +51,8 @@ dotfiles add $HOME/.myconfigfile
 ### Commit a configuration file to the repository:
 ```shell
 dotfiles commit -m "Added configuration file for myconfig"
+```
+### Push commit to upstream repository
+```shell
+dotfiles push -u origin mybranch
 ```
