@@ -56,6 +56,15 @@ ansicolors () {
     echo;
 };
 
+# Create a symlink to the socket for the current ssh-agent process
+# so that forwarding will work when resuming a "screen" session.
+if [ -S "${SSH_AUTH_SOCK}" ] && [ ! -h "${SSH_AUTH_SOCK}" ]; then {
+    ln -sf "${SSH_AUTH_SOCK}" "${HOME}/.ssh/ssh_auth_sock"
+}; fi
+
+# Override SSH_AUTH_SOCK with symlink to the socket for the current ssh-agent process
+export SSH_AUTH_SOCK="${HOME}/.ssh/ssh_auth_sock";
+
 # Automatically create a new screen session, or reattach to an existing session.
 if [ -z ${STY} ] && [ -t 0 ]; then {
     screen -A -d -R -S login;
