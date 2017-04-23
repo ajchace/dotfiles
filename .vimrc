@@ -43,59 +43,62 @@ let g:syntastic_loc_list_height = 5
 
 "-------------------------------------------------------------------------------
 
+" Set prefix used for custom key mappings
+let mapleader = "\\"
+
 " Insert timestamp after cursor position
-map \ts "=strftime("%F %T %Z")<CR>p
+map <Leader>ts "=strftime("%F %T %Z")<CR>p
 
 " Insert email address after cursor position
-map \eml aandrew.chace@gmail.com<Esc>
+map <Leader>eml aandrew.chace@gmail.com<Esc>
 
 " RPM changelog entry
-map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <andrew.chace@gmail.com><Esc>
+map <Leader>rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <andrew.chace@gmail.com><Esc>
 
 " Single-quote all lines
-map \sqa :%s/\(.*\)/'\1'<Esc>
+map <Leader>sqa :%s/\(.*\)/'\1'<Esc>
 
 " Single quote current line
-map \sql :s/\(.*\)/'\1'<Esc>
+map <Leader>sql :s/\(.*\)/'\1'<Esc>
 
 " Double-quote all lines
-map \dqa :%s/\(.*\)/"\1"<Esc>
+map <Leader>dqa :%s/\(.*\)/"\1"<Esc>
 
 " Double-quote current line
-map \dql :s/\(.*\)/"\1"<Esc>
+map <Leader>dql :s/\(.*\)/"\1"<Esc>
 
 " Add trailing comma to all lines
-map \tca :%s/\(.*\)/\1,<Esc>
+map <Leader>tca :%s/\(.*\)/\1,<Esc>
 
 " Add trailing comma to current line
-map \tcl :%s/\(.*\)/\1,<Esc>
+map <Leader>tcl :%s/\(.*\)/\1,<Esc>
 
 " Remove trailing whitespace from all lines
-map \rtsa :%s/\s*$//g<Esc>
+map <Leader>rtsa :%s/\s*$//g<Esc>
 
 " Remove trailing whitespace from current line
-map \rtsl :%s/\s*$//g<Esc>
+map <Leader>rtsl :%s/\s*$//g<Esc>
 
 " Show differences since time file was saved
-map \diff :w !diff -u % -
+map <Leader>diff :w !diff -u % -
 
 " Comment line
-map \cl :s/^/#/<CR>
+map <Leader>cl :s/^/#/<CR>
 
 " Uncomment line
-map \ucl :s/^#//<CR>
+map <Leader>ucl :s/^#//<CR>
 
 " Toggle line numbers
-map \ln :set number! number?<CR>
+map <Leader>ln :set number! number?<CR>
 
 " Toggle line wrapping
-map \wr :set wrap! wrap?<CR>
+map <Leader>wr :set wrap! wrap?<CR>
 
 " Toggle autoindent mode
-map \ai :set autoindent! autoindent?<CR>
+map <Leader>ai :set autoindent! autoindent?<CR>
 
 " Toggle paste mode
-map \pa :set paste! paste?<CR>
+map <Leader>pa :set paste! paste?<CR>
 
 " Toggle display unprintable characters
-map \li :set list! list?<CR>
+map <Leader>li :set list! list?<CR>
