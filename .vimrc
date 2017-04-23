@@ -86,16 +86,16 @@ map \cl :s/^/#/<CR>
 map \ucl :s/^#//<CR>
 
 " Toggle line numbers
-map <F1> :set number! number?<CR>
+map \ln :set number! number?<CR>
 
 " Toggle line wrapping
-map <F2> :set wrap! wrap?<CR>
+map \wr :set wrap! wrap?<CR>
 
 " Toggle autoindent mode
-map <F3> :set autoindent! autoindent?<CR>
+map \ai :set autoindent! autoindent?<CR>
 
 " Toggle paste mode
-map <F4> :set paste! paste?<CR>
+map \pa :set paste! paste?<CR>
 
 " Toggle display unprintable characters
-map <F5> :set list! list?<CR>
+map \li :set list! list?<CR>
