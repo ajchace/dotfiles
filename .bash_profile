@@ -16,8 +16,8 @@ shopt -s histappend
 ### Edit history commands before executing them
 shopt -s histverify
 
-## Use 'vi' to edit files
-export EDITOR="/usr/bin/vi";
+## Use 'vim' to edit files
+export EDITOR="/usr/bin/vim";
 
 ## Use less(1) as the default pager for the man(1) command.
 export PAGER="/usr/bin/less"
