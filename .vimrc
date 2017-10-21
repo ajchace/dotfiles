@@ -50,7 +50,7 @@ map \ts "=strftime("%F %T %Z")<CR>p
 map \eml achacea@fullcount.net<Esc>
 
 " RPM changelog entry
-map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <chacea@fullcount.net><Esc>
+map \rpm "=strftime("%a %b %d %Y")<CR>pa<Space>Andrew Chace <andrew.chace@gmail.com><Esc>
 
 " Single-quote all lines
 map \sqa :%s/\(.*\)/'\1'<Esc>
