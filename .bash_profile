@@ -45,6 +45,9 @@ alias hgrep="history | grep"
 ## Alias for viewing command history
 alias hless="history | less +G"
 
+## Alias to send wake-on-LAN packet to workstation
+alias wol="wakeonlan 00:30:48:9f:ab:0d"
+
 ## Render man page as Postscript and open in Preview.app
 psman() {
     man -t "${@}" | open -f -a Preview.app
