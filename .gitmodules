@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
+[submodule ".vim/bundle/vim-yaml"]
+	path = .vim/bundle/vim-yaml
+	url = https://github.com/stephpy/vim-yaml.git
